@@ -1,1 +1,14 @@
-["https://github.com/dataset-ninja/pcb-component-detection"]
+[
+  "https://github.com/dataset-ninja/pcb-component-detection",
+  "https://github.com/dataset-ninja/photometric-stereo-leafs",
+  "https://github.com/dataset-ninja/water-meters",
+  "https://github.com/dataset-ninja/self-driving-cars",
+  "https://github.com/dataset-ninja/kolektor-surface-defect-dataset-2",
+  "https://github.com/dataset-ninja/chest-xray",
+  "https://github.com/dataset-ninja/synthetic-plants",
+  "https://github.com/dataset-ninja/bsdata",
+  "https://github.com/dataset-ninja/deep-nir-fruit",
+  "https://github.com/dataset-ninja/kfuji",
+  "https://github.com/dataset-ninja/neon-tree",
+  "https://github.com/dataset-ninja/pear-desease"
+]

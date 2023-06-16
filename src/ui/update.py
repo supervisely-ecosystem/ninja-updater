@@ -95,6 +95,8 @@ def start():
 
 def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
     repo_name = repo_url.split("/")[-1].split(".")[0]
+    git_url = f"{repo_url.split('.com/')[-1]}.git"
+    ssh_url = f"git@github.com:{git_url}"
 
     update_table(idx, "working")
 
@@ -102,14 +104,12 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
         f"Started processing repo {repo_name} from {repo_url} and following forces: {forces}"
     )
 
-    return
-
     local_repo_path = os.path.join(g.REPOS_DIR, repo_name)
     sly.fs.mkdir(local_repo_path, remove_content_if_exists=True)
 
-    repo = Repo.clone_from(repo_url, local_repo_path)
+    repo = Repo.clone_from(ssh_url, local_repo_path)
 
-    sly.logger.info(f"Cloned repo {repo_name} to {local_repo_path}.")
+    sly.logger.info(f"Cloned repo from git url {git_url} to {local_repo_path}.")
 
     repo_requirements_path = os.path.join(local_repo_path, "requirements.txt")
     # Installing repo requirements to local environment, if requirements.txt exists.

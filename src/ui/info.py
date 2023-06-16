@@ -1,21 +1,29 @@
-from supervisely.app.widgets import Text, Card, Container
+from supervisely.app.widgets import Text, Card, Container, Button
 import supervisely as sly
 
 import src.globals as g
 
-api_text = Text("Successfully connected to the Assets API.", "success")
-ssh_text = Text("Successfully set up SSH key.", "success")
-api_text.hide()
+ssh_text = Text()
 ssh_text.hide()
+
+update_dtools_button = Button("Update dtools", icon="zmdi zmdi-refresh")
+update_dtools_button.disable()
 
 card = Card(
     title="1️⃣ Info",
     description="Check that everything is set up correctly.",
     collapsable=True,
-    content=Container(widgets=[api_text, ssh_text]),
+    content=Container(widgets=[ssh_text]),
+    content_top_right=update_dtools_button,
 )
 
-if g.assets_api and g.ssh_status:
-    sly.logger.info("Api is connected and SSH key is set up.")
-    api_text.show()
-    ssh_text.show()
+if g.AppState.ssh_status:
+    sly.logger.info("SSH keys are set up correctly.")
+    ssh_text.text = "SSH keys are set up correctly."
+    ssh_text.status = "success"
+else:
+    sly.logger.error("SSH keys are not set up correctly.")
+    ssh_text.text = "SSH keys are not set up correctly."
+    ssh_text.status = "error"
+
+ssh_text.show()
