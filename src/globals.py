@@ -2,6 +2,7 @@ import os
 import json
 import subprocess
 import shutil
+import requests
 
 import supervisely as sly
 
@@ -135,26 +136,15 @@ AppState.ssh_status = setup_ssh_key()
 
 
 def install_chrome():
-    sly.logger.info("Trying to install Chrome. Installing dependencies.")
-
-    # Installing dependencies.
+    # Установка зависимостей
     subprocess.run(["apt-get", "update"])
-    subprocess.run(["apt-get", "install", "-y", "wget", "gnupg2"])
+    subprocess.run(["apt-get", "install", "-y", "gnupg2"])
 
-    sly.logger.info("Dependencies installed. Downloading Chrome.")
+    # Загрузка и установка ключа проверки подписи
+    response = requests.get("https://dl-ssl.google.com/linux/linux_signing_key.pub")
+    subprocess.run(["apt-key", "add", "-"], input=response.text, encoding="utf-8")
 
-    # Downloading and installing Chrome.
-    subprocess.run(
-        [
-            "wget",
-            "-q",
-            "-O",
-            "- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -",
-        ]
-    )
-
-    sly.logger.info("Chrome downloaded. Installing Chrome.")
-
+    # Добавление репозитория Chrome
     subprocess.run(
         [
             "sh",
@@ -162,10 +152,11 @@ def install_chrome():
             'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list',
         ]
     )
+
+    # Установка Google Chrome
     subprocess.run(["apt-get", "update"])
     subprocess.run(["apt-get", "install", "-y", "google-chrome-stable"])
 
-    sly.logger.info("Chrome installed.")
 
-
+# Вызов функции установки Chrome
 install_chrome()
