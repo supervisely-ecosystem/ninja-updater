@@ -115,18 +115,13 @@ def setup_ssh_key():
         universal_newlines=True,
     )
 
-    warning, login = process.communicate()
-
-    sly.logger.info(f"Warning: {warning}")
-    sly.logger.info(f"Login: {login}")
-
-    if not login or not login.startswith("Hi"):
+    response = process.communicate()
+    for line in response:
+        sly.logger.info(line)
+    if not any(line.startswith("Hi") for line in response):
         raise RuntimeError(
             "Could not connect to GitHub. Check that the SSH key is set up correctly."
         )
-    if warning:
-        sly.logger.warning(warning)
-    sly.logger.info(login)
 
     return True
 
