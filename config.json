@@ -12,7 +12,7 @@
   "headless": false,
   "icon_cover": true,
   "context_menu": {
-    "target": ["ecosystem"]
+    "target": ["files_file", "ecosystem"]
   },
   "poster": ""
 }
