@@ -1,2 +1,2 @@
 supervisely
-git+https://github.com/supervisely/dataset-tools
+git+https://github.com/supervisely/dataset-tools@fonts-test
