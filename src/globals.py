@@ -132,3 +132,40 @@ def setup_ssh_key():
 
 
 AppState.ssh_status = setup_ssh_key()
+
+
+def install_chrome():
+    sly.logger.info("Trying to install Chrome. Installing dependencies.")
+
+    # Installing dependencies.
+    subprocess.run(["apt-get", "update"])
+    subprocess.run(["apt-get", "install", "-y", "wget", "gnupg2"])
+
+    sly.logger.info("Dependencies installed. Downloading Chrome.")
+
+    # Downloading and installing Chrome.
+    subprocess.run(
+        [
+            "wget",
+            "-q",
+            "-O",
+            "- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -",
+        ]
+    )
+
+    sly.logger.info("Chrome downloaded. Installing Chrome.")
+
+    subprocess.run(
+        [
+            "sh",
+            "-c",
+            'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list',
+        ]
+    )
+    subprocess.run(["apt-get", "update"])
+    subprocess.run(["apt-get", "install", "-y", "google-chrome-stable"])
+
+    sly.logger.info("Chrome installed.")
+
+
+install_chrome()
