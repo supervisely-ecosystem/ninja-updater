@@ -65,6 +65,7 @@ REPO_STATUSES = {
 class State:
     def __init__(self):
         self.ssh_status = False
+        self.continue_processing = True
         self.selected_repos = []
 
 

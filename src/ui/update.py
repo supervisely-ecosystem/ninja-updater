@@ -62,11 +62,12 @@ repos_progress.hide()
 card = Card(
     title="3️⃣ Update",
     description="Select what to update and start the process.",
-    content=Container(widgets=[select_container, buttons_flexbox, repos_progress]),
+    content=Container(widgets=[select_container, repos_progress]),
     collapsable=True,
+    content_top_right=buttons_flexbox,
 )
-# card.lock()
-# card.collapse()
+card.lock()
+card.collapse()
 
 
 @start_button.click
@@ -74,6 +75,9 @@ def start():
     force_stats = stats_select.get_value()
     force_visuals = visuals_select.get_value()
     force_texts = texts_select.get_value()
+
+    start_button.text = "Processing..."
+    stop_button.show()
 
     forces = {
         "force_stats": force_stats or [],
@@ -83,14 +87,29 @@ def start():
 
     repos_to_update = g.AppState.selected_repos
 
+    repos_progress.show()
     with repos_progress(
         message="Processing repositories...", total=len(repos_to_update)
     ) as pbar:
         idx = 1
         for repo_url in repos_to_update:
-            process_repo(repo_url, idx, forces)
-            pbar.update(1)
-            idx += 1
+            if g.AppState.continue_processing:
+                process_repo(repo_url, idx, forces)
+                pbar.update(1)
+                idx += 1
+            else:
+                break
+
+    sly.logger.info("Finished processing all repositories.")
+    stop_button.hide()
+    start_button.text = "Start"
+
+
+@stop_button.click
+def stop():
+    stop_button.hide()
+    start_button.text = "Stopping..."
+    g.AppState.continue_processing = False
 
 
 def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):

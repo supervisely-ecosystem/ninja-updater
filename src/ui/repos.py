@@ -37,9 +37,8 @@ unlock_button.hide()
 card = Card(
     title="2️⃣ Repositories",
     description="Select repositories to update.",
-    content=Container(
-        widgets=[tr, repo_table, not_selected_text, lock_button, unlock_button]
-    ),
+    content=Container(widgets=[tr, repo_table, not_selected_text, lock_button]),
+    content_top_right=unlock_button,
     collapsable=True,
 )
 
