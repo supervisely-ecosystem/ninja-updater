@@ -35,7 +35,7 @@ def update_dtools():
     update_dtools_button.text = "Updating..."
 
     return_code = subprocess.check_call(
-        "pip install git+https://github.com/supervisely/dataset-tools",
+        "pip3 install git+https://github.com/supervisely/dataset-tools",
         shell=True,
         stdout=subprocess.PIPE,
         text=True,
