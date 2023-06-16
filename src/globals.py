@@ -115,12 +115,16 @@ def setup_ssh_key():
         universal_newlines=True,
     )
 
-    response = process.communicate()
-    for line in response:
-        sly.logger.info(line)
-    if not any(line.startswith("Hi") for line in response):
+    stdout, stderr = process.communicate()
+    sly.logger.info(f"stdout: {stdout}")
+    sly.logger.info(f"stderr: {stderr}")
+
+    if (
+        "successfully authenticated" not in stdout
+        and "successfully authenticated" not in stderr
+    ):
         raise RuntimeError(
-            "Could not connect to GitHub. Check that the SSH key is set up correctly."
+            f"Could not setup SSH key for GutHub. Check that {REMOTE_SSH_KEY} is correct."
         )
 
     return True
