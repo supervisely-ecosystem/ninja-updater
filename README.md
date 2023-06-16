@@ -30,6 +30,6 @@ This app allows you to easily run scripts from the Ninja repository provided in 
 ## How To Run
 
 1. Launch the app from the context menu of your ssh key file (`id_rsa`) in the TeamFiles folder.
-2. Select repositories to update in the Transfer widget in step 2️⃣.
-3. Config forces in step 3️⃣ (optional).
+2. Select repositories to update in the Transfer widget in Step 2️⃣.
+3. Config forces in Step 3️⃣ (optional).
 4. Press the `Start` button.
