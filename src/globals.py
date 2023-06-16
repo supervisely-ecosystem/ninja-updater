@@ -91,13 +91,22 @@ def setup_ssh_key():
     local_ssh_key_path = os.path.join(local_ssh_dir, "id_rsa")
 
     if not os.path.exists(local_ssh_dir):
+        sly.logger.warning(f"Directory .ssh does not exist. Creating {local_ssh_dir}")
         os.makedirs(local_ssh_dir)
 
+    sly.logger.info(f"Trying to copy {ssh_key_path} to {local_ssh_key_path}")
     shutil.copy(ssh_key_path, local_ssh_key_path)
+
+    sly.logger.info(f"Copied {ssh_key_path} to {local_ssh_key_path}")
 
     os.chmod(local_ssh_key_path, 0o600)
 
+    sly.logger.info(f"Changed permissions for {local_ssh_key_path}")
+
     cmd = "ssh -T -o StrictHostKeyChecking=no git@github.com"
+
+    sly.logger.info(f"Will run command: {cmd}")
+
     process = subprocess.Popen(
         cmd,
         shell=True,
@@ -107,6 +116,9 @@ def setup_ssh_key():
     )
 
     warning, login = process.communicate()
+
+    sly.logger.info(f"Warning: {warning}")
+    sly.logger.info(f"Login: {login}")
 
     if not login or not login.startswith("Hi"):
         raise RuntimeError(
