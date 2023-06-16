@@ -46,7 +46,10 @@ def update_dtools():
 
         sly.app.show_dialog(
             title="Update dtools failed",
-            description=f"Updated of dtools failed with return code {return_code}. It's recommended to restart the app.",
+            description=(
+                f"Updated of dtools failed with return code {return_code}. "
+                "It's recommended to restart the app."
+            ),
             status="error",
         )
 
