@@ -1,0 +1,18 @@
+{
+  "name": "Ninja repo updater",
+  "type": "app",
+  "version": "2.0.0",
+  "categories": ["dev"],
+  "description": "Update repos as ninja",
+  "docker_image": "supervisely/base-py-sdk:6.72.35",
+  "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+  "port": 8000,
+  "task_location": "workspace_tasks",
+  "icon": "",
+  "headless": false,
+  "icon_cover": true,
+  "context_menu": {
+    "target": ["ecosystem"]
+  },
+  "poster": ""
+}
