@@ -136,15 +136,15 @@ AppState.ssh_status = setup_ssh_key()
 
 
 def install_chrome():
-    # Установка зависимостей
+    sly.logger.info("Installing Google Chrome...")
     subprocess.run(["apt-get", "update"])
     subprocess.run(["apt-get", "install", "-y", "gnupg2"])
 
-    # Загрузка и установка ключа проверки подписи
+    sly.logger.info("Dependencies installed, adding Google Chrome repository...")
+
     response = requests.get("https://dl-ssl.google.com/linux/linux_signing_key.pub")
     subprocess.run(["apt-key", "add", "-"], input=response.text, encoding="utf-8")
 
-    # Добавление репозитория Chrome
     subprocess.run(
         [
             "sh",
@@ -153,10 +153,12 @@ def install_chrome():
         ]
     )
 
-    # Установка Google Chrome
+    sly.logger.info("Repository added, installing Google Chrome...")
+
     subprocess.run(["apt-get", "update"])
     subprocess.run(["apt-get", "install", "-y", "google-chrome-stable"])
 
+    sly.logger.info("Google Chrome installed.")
 
-# Вызов функции установки Chrome
+
 install_chrome()
