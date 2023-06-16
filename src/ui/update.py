@@ -51,7 +51,7 @@ select_container = Container([stats_field, visuals_field, texts_field])
 
 
 start_button = Button("Start", icon="zmdi zmdi-play-circle-outline")
-stop_button = Button("Stop", icon="zmdi zmdi-stop-circle", button_type="danger")
+stop_button = Button("Stop", icon="zmdi zmdi-stop", button_type="danger")
 stop_button.hide()
 
 buttons_flexbox = Flexbox([start_button, stop_button])
