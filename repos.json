@@ -47,5 +47,16 @@
   "https://github.com/dataset-ninja/chw",
   "https://github.com/dataset-ninja/kcow1",
   "https://github.com/dataset-ninja/cattle-face-detection",
-  "https://github.com/dataset-ninja/cattle-face" 
+  "https://github.com/dataset-ninja/cattle-face",
+  "https://github.com/dataset-ninja/concrete-crack-segmentation-dataset.git",
+  "https://github.com/dataset-ninja/cracks-and-potholes-in-road.git",
+  "https://github.com/dataset-ninja/road-damage.git",
+  "https://github.com/dataset-ninja/disease-detection-in-fruit-images.git",
+  "https://github.com/dataset-ninja/full-body-tiktok-dancing-dataset.git",
+  "https://github.com/dataset-ninja/car-license-plate.git",
+  "https://github.com/dataset-ninja/road-vehicle.git",
+  "https://github.com/dataset-ninja/power-plants-damage-detection.git",
+  "https://github.com/dataset-ninja/wind-turbines.git",
+  "https://github.com/dataset-ninja/synthetic-overhead-wind-turbines.git",
+  "https://github.com/dataset-ninja/real-overhead-wind-turbines.git"
 ]
