@@ -60,5 +60,9 @@
   "https://github.com/dataset-ninja/wind-turbines",
   "https://github.com/dataset-ninja/synthetic-overhead-wind-turbines",
   "https://github.com/dataset-ninja/real-overhead-wind-turbines",
-  "https://github.com/dataset-ninja/elec-apc2"
+  "https://github.com/dataset-ninja/elec-apc2",
+  "https://github.com/dataset-ninja/electric-pole",
+  "https://github.com/dataset-ninja/powerline-detection",
+  "https://github.com/dataset-ninja/detect-caxah",
+  "https://github.com/dataset-ninja/utility-pole-label"
 ]
