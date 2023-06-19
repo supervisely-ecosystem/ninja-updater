@@ -33,7 +33,6 @@ REMOTE_SSH_KEY = sly.env.file()
 LOCAL_SSH_KEY = os.path.join(FILES_DIR, "id_rsa")
 
 STATS_OPTIONS = [
-    "all",
     "ClassBalance",
     "ClassCooccurrence",
     "ClassesPerImage",
@@ -47,13 +46,12 @@ STATS_OPTIONS = [
 ]
 
 VISUALS_OPTIONS = [
-    "all",
     "Poster",
     "SideAnnotationsGrid",
     "HorizontalGrid",
     "VerticalGrid",
 ]
-TEXTS_OPTIONS = ["all", "citation", "license", "readme", "download", "summary"]
+TEXTS_OPTIONS = ["citation", "license", "readme", "download", "summary"]
 
 REPO_STATUSES = {
     "waiting": "⏺️ Waiting",
