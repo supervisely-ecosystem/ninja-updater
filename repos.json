@@ -82,5 +82,6 @@
   "https://github.com/dataset-ninja/afo",
   "https://github.com/dataset-ninja/airbus-oil-storage-detection",
   "https://github.com/dataset-ninja/airbus-aircraft-detection",
-  "https://github.com/dataset-ninja/remote-sensing-land-cover-dataset"
+  "https://github.com/dataset-ninja/remote-sensing-land-cover-dataset",
+  "https://github.com/dataset-ninja/floodnet"
 ]
