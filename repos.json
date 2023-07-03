@@ -85,5 +85,11 @@
   "https://github.com/dataset-ninja/remote-sensing-land-cover-dataset",
   "https://github.com/dataset-ninja/floodnet",
   "https://github.com/dataset-ninja/roundabout-aerial-images-for-vehicle-detection",
-  "https://github.com/dataset-ninja/malaria-bounding-boxes"
+  "https://github.com/dataset-ninja/malaria-bounding-boxes",
+  "https://github.com/dataset-ninja/coco-2014",
+  "https://github.com/dataset-ninja/coco-2017",
+  "https://github.com/dataset-ninja/coco-2017-keypoints",
+  "https://github.com/dataset-ninja/cocostuff10k",
+  "https://github.com/dataset-ninja/PASCAL-context",
+  "https://github.com/dataset-ninja/chase-db1"
 ]
