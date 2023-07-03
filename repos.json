@@ -95,5 +95,6 @@
   "https://github.com/dataset-ninja/pothole-dataset-v8-for-detection",
   "https://github.com/dataset-ninja/fabric-stain-dataset",
   "https://github.com/dataset-ninja/npu-bolt",
-  "https://github.com/dataset-ninja/fluorescent-neuronal-cells"
+  "https://github.com/dataset-ninja/fluorescent-neuronal-cells",
+  "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset"
 ]
