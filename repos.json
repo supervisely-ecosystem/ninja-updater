@@ -91,5 +91,6 @@
   "https://github.com/dataset-ninja/coco-2017-keypoints",
   "https://github.com/dataset-ninja/cocostuff10k",
   "https://github.com/dataset-ninja/PASCAL-context",
-  "https://github.com/dataset-ninja/chase-db1"
+  "https://github.com/dataset-ninja/chase-db1",
+  "https://github.com/dataset-ninja/pothole-dataset-v8-for-detection"
 ]
