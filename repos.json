@@ -96,5 +96,7 @@
   "https://github.com/dataset-ninja/fabric-stain-dataset",
   "https://github.com/dataset-ninja/npu-bolt",
   "https://github.com/dataset-ninja/fluorescent-neuronal-cells",
-  "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset"
+  "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset",
+  "https://github.com/dataset-ninja/DeepGlobe",
+  "https://github.com/dataset-ninja/cocoa-diseases"
 ]
