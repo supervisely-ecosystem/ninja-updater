@@ -148,7 +148,7 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
         for line in to_install:
             sly.logger.info(f"Installing {line}...")
             return_code = subprocess.check_call(
-                f"pip install {line}",
+                f"pip3 install {line}",
                 shell=True,
                 cwd=local_repo_path,
                 stdout=subprocess.PIPE,
