@@ -145,14 +145,11 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
 
         sly.logger.info(f"Found {len(to_install)} requirements to install.")
         # Installing requirements.
-
-        pip_path = find_pip3_path()
-        print(f"DEBUG!!!!!!! Pip path: {pip_path}")
         
         for line in to_install:
             sly.logger.info(f"Installing {line}...")
             return_code = subprocess.check_call(
-                f"pip3 install {line}",
+                f"{find_pip3_path()} install {line}",
                 shell=True,
                 cwd=local_repo_path,
                 stdout=subprocess.PIPE,
