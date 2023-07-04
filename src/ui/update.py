@@ -145,6 +145,10 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
 
         sly.logger.info(f"Found {len(to_install)} requirements to install.")
         # Installing requirements.
+
+        pip_path = find_pip3_path()
+        print(f"DEBUG!!!!!!! Pip path: {pip_path}")
+        
         for line in to_install:
             sly.logger.info(f"Installing {line}...")
             return_code = subprocess.check_call(
@@ -207,6 +211,20 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
     remote.push()
 
     update_table(idx, "finished")
+
+
+def find_pip3_path():
+    try:
+        result = subprocess.run(['which', 'pip3'], capture_output=True, text=True)
+        if result.returncode == 0:
+            pip3_path = result.stdout.strip()
+            return pip3_path
+        else:
+            print(f"Command 'which pip3' exited with return code {result.returncode}")
+    except FileNotFoundError:
+        print("Command 'which' not found")
+
+    return None
 
 
 def delete_pycache(local_repo_path):
