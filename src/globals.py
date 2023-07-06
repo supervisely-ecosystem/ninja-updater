@@ -11,7 +11,12 @@ from dotenv import load_dotenv
 ABSOLUTE_PATH = os.path.dirname(__file__)
 ROOT_DIR = os.path.dirname(ABSOLUTE_PATH)
 REPOS_JSON = os.path.join(ROOT_DIR, "repos.json")
-REPOS_URLS = json.load(open(REPOS_JSON, "r"))
+
+REPOS_DATA = json.load(open(REPOS_JSON, "r"))
+REPOS_OWNERS = list(REPOS_DATA.keys())
+REPOS_URLS = []
+for repos_list in REPOS_DATA.values():
+    REPOS_URLS.extend(repos_list)
 REPOS_NAMES = [url.split("/")[-1].replace(".git", "") for url in REPOS_URLS]
 sly.logger.info(f"Loaded list with {len(REPOS_URLS)} repos from {REPOS_JSON}.")
 REPOS = list(zip(REPOS_NAMES, REPOS_URLS))
@@ -159,4 +164,4 @@ def install_chrome():
     sly.logger.info("Google Chrome installed.")
 
 
-install_chrome()
+# install_chrome()

@@ -145,7 +145,7 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
 
         sly.logger.info(f"Found {len(to_install)} requirements to install.")
         # Installing requirements.
-        
+
         for line in to_install:
             sly.logger.info(f"Installing {line}...")
             return_code = subprocess.check_call(
@@ -212,7 +212,7 @@ def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
 
 def find_pip3_path():
     try:
-        result = subprocess.run(['which', 'pip3'], capture_output=True, text=True)
+        result = subprocess.run(["which", "pip3"], capture_output=True, text=True)
         if result.returncode == 0:
             pip3_path = result.stdout.strip()
             return pip3_path

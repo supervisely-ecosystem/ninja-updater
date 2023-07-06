@@ -7,6 +7,8 @@ from supervisely.app.widgets import (
     Transfer,
     Button,
     Table,
+    Select,
+    Field,
 )
 import supervisely as sly
 
@@ -23,6 +25,14 @@ tr = Transfer(
     filter_placeholder="Search repos",
 )
 
+owner_select = Select([Select.Item(owner) for owner in g.REPOS_OWNERS])
+owner_select.set_value(None)
+owner_field = Field(
+    title="Owner (optional)",
+    description="Select the repo owner to filter repositories.",
+    content=owner_select,
+)
+
 COLUMNS = ["#", "Repository", "Status"]
 repo_table = Table(fixed_cols=1)
 repo_table.hide()
@@ -37,10 +47,24 @@ unlock_button.hide()
 card = Card(
     title="2️⃣ Repositories",
     description="Select repositories to update.",
-    content=Container(widgets=[tr, repo_table, not_selected_text, lock_button]),
+    content=Container(
+        widgets=[owner_field, tr, repo_table, not_selected_text, lock_button]
+    ),
     content_top_right=unlock_button,
     collapsable=True,
 )
+
+
+@owner_select.value_changed
+def filter_by_owner(owner):
+    repo_urls = g.REPOS_DATA[owner]
+    repo_names = [url.split("/")[-1].replace(".git", "") for url in repo_urls]
+    tr_items = [
+        Transfer.Item(key=repo_url, label=repo_name)
+        for repo_name, repo_url in zip(repo_names, repo_urls)
+    ]
+
+    tr.set_items(tr_items)
 
 
 @lock_button.click
