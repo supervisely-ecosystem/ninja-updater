@@ -102,5 +102,9 @@
   "https://github.com/dataset-ninja/small-size-construction-tools",
   "https://github.com/dataset-ninja/skin-cancer-ham10000",
   "https://github.com/dataset-ninja/accurate-nevus-shapes",
-  "https://github.com/dataset-ninja/DeepBacs"
+  "https://github.com/dataset-ninja/DeepBacs",
+  "https://github.com/dataset-ninja/breast-ultasound-images",
+  "https://github.com/dataset-ninja/intraretinal-cystoid-fluid",
+  "https://github.com/dataset-ninja/uav-small-object-detection",
+  "https://github.com/dataset-ninja/concrete-pores"
 ]
