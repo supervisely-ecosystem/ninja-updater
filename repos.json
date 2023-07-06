@@ -17,6 +17,8 @@
     "https://github.com/dataset-ninja/uav-small-object-detection",
     "https://github.com/dataset-ninja/concrete-pores",
     "https://github.com/dataset-ninja/skin-cancer-ham10000",
+    "https://github.com/dataset-ninja/myself-cows",
+    "https://github.com/dataset-ninja/elec-apc2",
     "https://github.com/dataset-ninja/accurate-nevus-shapes"
   ],
   "almaz": [
@@ -47,9 +49,10 @@
     "https://github.com/dataset-ninja/npu-bolt",
     "https://github.com/dataset-ninja/fluorescent-neuronal-cells",
     "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset",
-    "https://github.com/dataset-ninja/malaria-segmentation",
+    "https://github.com/dataset-ninja/remote-sensing-land-cover-dataset",
+    "https://github.com/dataset-ninja/malaria-segmentation"
   ],
-  "other": [
+  "grokhi": [
     "https://github.com/dataset-ninja/cityscapes",
     "https://github.com/dataset-ninja/maize-cobs",
     "https://github.com/dataset-ninja/aerial-power",
@@ -70,7 +73,6 @@
     "https://github.com/dataset-ninja/cocoa-diseases",
     "https://github.com/dataset-ninja/pascal-voc-2012",
     "https://github.com/dataset-ninja/strawdi",
-    "https://github.com/dataset-ninja/myself-cows",
     "https://github.com/dataset-ninja/defects-power-distribution",
     "https://github.com/dataset-ninja/fish-market",
     "https://github.com/dataset-ninja/brackish-underwater",
@@ -88,7 +90,6 @@
     "https://github.com/dataset-ninja/kcow1",
     "https://github.com/dataset-ninja/cattle-face-detection",
     "https://github.com/dataset-ninja/cattle-face",
-    "https://github.com/dataset-ninja/elec-apc2",
     "https://github.com/dataset-ninja/electric-pole",
     "https://github.com/dataset-ninja/powerline-detection",
     "https://github.com/dataset-ninja/detect-caxah",
@@ -101,16 +102,17 @@
     "https://github.com/dataset-ninja/afo",
     "https://github.com/dataset-ninja/airbus-oil-storage-detection",
     "https://github.com/dataset-ninja/airbus-aircraft-detection",
-    "https://github.com/dataset-ninja/remote-sensing-land-cover-dataset",
     "https://github.com/dataset-ninja/floodnet",
-    "https://github.com/dataset-ninja/coco-2014",
-    "https://github.com/dataset-ninja/coco-2017",
-    "https://github.com/dataset-ninja/coco-2017-keypoints",
-    "https://github.com/dataset-ninja/cocostuff10k",
     "https://github.com/dataset-ninja/PASCAL-context",
     "https://github.com/dataset-ninja/chase-db1",
     "https://github.com/dataset-ninja/DeepGlobe",
     "https://github.com/dataset-ninja/small-size-construction-tools",
     "https://github.com/dataset-ninja/DeepBacs"
+  ],
+  "other": [
+    "https://github.com/dataset-ninja/coco-2014",
+    "https://github.com/dataset-ninja/coco-2017",
+    "https://github.com/dataset-ninja/coco-2017-keypoints",
+    "https://github.com/dataset-ninja/cocostuff10k"
   ]
 }
