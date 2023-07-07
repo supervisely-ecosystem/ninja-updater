@@ -164,4 +164,4 @@ def install_chrome():
     sly.logger.info("Google Chrome installed.")
 
 
-# install_chrome()
+install_chrome()
