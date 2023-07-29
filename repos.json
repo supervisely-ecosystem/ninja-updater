@@ -118,6 +118,7 @@
     "https://github.com/dataset-ninja/coco-2017",
     "https://github.com/dataset-ninja/coco-2017-keypoints",
     "https://github.com/dataset-ninja/cocostuff10k",
-    "https://github.com/dataset-ninja/mvtec-d2s"
+    "https://github.com/dataset-ninja/mvtec-d2s",
+    "https://github.com/dataset-ninja/ag-rob-tomato"
   ]
 }
