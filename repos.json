@@ -40,9 +40,7 @@
     "https://github.com/dataset-ninja/pylon-components",
     "https://github.com/dataset-ninja/stn-plad",
     "https://github.com/dataset-ninja/morado_5may",
-    "https://github.com/dataset-ninja/insulator-defect-detection"
-  ],
-  "hidden datasets": [
+    "https://github.com/dataset-ninja/insulator-defect-detection",
     "https://github.com/dataset-ninja/sheep-detection",
     "https://github.com/dataset-ninja/wind-turbines",
     "https://github.com/dataset-ninja/synthetic-overhead-wind-turbines",
@@ -64,6 +62,17 @@
     "https://github.com/dataset-ninja/safety-helmet-detection",
     "https://github.com/dataset-ninja/face-mask-detection",
     "https://github.com/dataset-ninja/road-sign-detection",
-    "https://github.com/dataset-ninja/aerial-ship-detection"
+    "https://github.com/dataset-ninja/aerial-ship-detection"    
+  ],
+  "hidden datasets": [
+    "https://github.com/dataset-ninja/vsai",
+    "https://github.com/dataset-ninja/semantic-segmentation-satellite-imagery",
+    "https://github.com/dataset-ninja/malaria-bounding-boxes",
+    "https://github.com/dataset-ninja/npu-bolt",
+    "https://github.com/dataset-ninja/fluorescent-neuronal-cells",
+    "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset",
+    "https://github.com/dataset-ninja/bee-image",
+    "https://github.com/dataset-ninja/uav-small-object-detection",
+    "https://github.com/dataset-ninja/accurate-drone",  
   ]
 }
