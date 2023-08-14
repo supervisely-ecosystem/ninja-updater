@@ -41,5 +41,29 @@
     "https://github.com/dataset-ninja/stn-plad",
     "https://github.com/dataset-ninja/morado_5may",
     "https://github.com/dataset-ninja/insulator-defect-detection"
+  ],
+  "hidden datasets": [
+    "https://github.com/dataset-ninja/sheep-detection",
+    "https://github.com/dataset-ninja/wind-turbines",
+    "https://github.com/dataset-ninja/synthetic-overhead-wind-turbines",
+    "https://github.com/dataset-ninja/real-overhead-wind-turbines",
+    "https://github.com/dataset-ninja/synthetic-overhead-images-and-ground-truth-Labels-of-large-wind-turbines",
+    "https://github.com/dataset-ninja/wind-turbine-detection",
+    "https://github.com/dataset-ninja/multi-topography-dataset-for-wind-turbine-detection",
+    "https://github.com/dataset-ninja/YOLO-annotated-wind-turbine-surface-damage",
+    "https://github.com/dataset-ninja/YOLOv7-wind-turbine-detection",
+    "https://github.com/dataset-ninja/wind-turbine-object-detection-using-TensorFlow",
+    "https://github.com/dataset-ninja/self-driving-cars",
+    "https://github.com/dataset-ninja/saras-esad-2020",
+    "https://github.com/dataset-ninja/bccd",
+    "https://github.com/dataset-ninja/airbus-aircraft-detection",
+    "https://github.com/dataset-ninja/airbus-oil-storage-detection",
+    "https://github.com/dataset-ninja/food-recognition",
+    "https://github.com/dataset-ninja/afo",
+    "https://github.com/dataset-ninja/DeepGlobe",
+    "https://github.com/dataset-ninja/safety-helmet-detection",
+    "https://github.com/dataset-ninja/face-mask-detection",
+    "https://github.com/dataset-ninja/road-sign-detection",
+    "https://github.com/dataset-ninja/aerial-ship-detection"
   ]
 }
