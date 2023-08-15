@@ -71,15 +71,16 @@
     "https://github.com/dataset-ninja/heat-sink-surface-defect-dataset",
     "https://github.com/dataset-ninja/bee-image",
     "https://github.com/dataset-ninja/uav-small-object-detection",
-    "https://github.com/dataset-ninja/accurate-drone"    
-  ],
-  "hidden datasets": [
+    "https://github.com/dataset-ninja/accurate-drone",
     "https://github.com/dataset-ninja/skin-cancer-ham10000",
     "https://github.com/dataset-ninja/accurate-nevus-shapes",
     "https://github.com/dataset-ninja/isaid-airplane",
     "https://github.com/dataset-ninja/ag-rob-tomato",
     "https://github.com/dataset-ninja/rpi-tomato",
     "https://github.com/dataset-ninja/vehicle-wheel-detection",
-    "https://github.com/dataset-ninja/construction-vehicle-images"
+    "https://github.com/dataset-ninja/construction-vehicle-images"    
+  ],
+  "hidden datasets": [
+
   ]
 }
