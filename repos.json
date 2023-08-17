@@ -79,13 +79,13 @@
     "https://github.com/dataset-ninja/rpi-tomato",
     "https://github.com/dataset-ninja/vehicle-wheel-detection",
     "https://github.com/dataset-ninja/ttpla",
-    "https://github.com/dataset-ninja/plastic-bottles",    
-    "https://github.com/dataset-ninja/industrial-optical-inspection"    
+    "https://github.com/dataset-ninja/plastic-bottles",
+    "https://github.com/dataset-ninja/industrial-optical-inspection"
   ],
   "hidden datasets": [
     "https://github.com/dataset-ninja/mvtec-AD",
     "https://github.com/dataset-ninja/mvtec-loco-ad",
-    "https://github.com/dataset-ninja/cracks-and-potholes-in-road",    
+    "https://github.com/dataset-ninja/cracks-and-potholes-in-road",
     "https://github.com/dataset-ninja/road-pothole-images",
     "https://github.com/dataset-ninja/roundabout-aerial-images-for-vehicle-detection",
     "https://github.com/dataset-ninja/fabric-stain-dataset",
