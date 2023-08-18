@@ -114,6 +114,7 @@
     "https://github.com/dataset-ninja/concrete-crack-segmentation-dataset",
     "https://github.com/dataset-ninja/teeth-segmentation",
     "https://github.com/dataset-ninja/quince-set",
-    "https://github.com/dataset-ninja/construction-vehicle-images"
+    "https://github.com/dataset-ninja/construction-vehicle-images",
+    "https://github.com/dataset-ninja/chest-xray"
   ]
 }
