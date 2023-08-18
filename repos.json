@@ -115,6 +115,7 @@
     "https://github.com/dataset-ninja/teeth-segmentation",
     "https://github.com/dataset-ninja/quince-set",
     "https://github.com/dataset-ninja/construction-vehicle-images",
-    "https://github.com/dataset-ninja/chest-xray"
+    "https://github.com/dataset-ninja/chest-xray",
+    "https://github.com/dataset-ninja/synthetic-cracks-dataset"
   ]
 }
