@@ -86,7 +86,8 @@
     "https://github.com/dataset-ninja/apple-mots",
     "https://github.com/dataset-ninja/wood-defect-detection",
     "https://github.com/dataset-ninja/piling-sheet-image-data",    
-    "https://github.com/dataset-ninja/chest-xray"    
+    "https://github.com/dataset-ninja/chest-xray",
+    "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [
     "https://github.com/dataset-ninja/mvtec-AD",
