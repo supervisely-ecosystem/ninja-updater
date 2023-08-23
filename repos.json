@@ -91,6 +91,7 @@
   ],
   "hidden datasets": [
     "https://github.com/dataset-ninja/mvtec-AD",
+    "https://github.com/dataset-ninja/floodnet",    
     "https://github.com/dataset-ninja/cracks-and-potholes-in-road",
     "https://github.com/dataset-ninja/road-pothole-images",
     "https://github.com/dataset-ninja/roundabout-aerial-images-for-vehicle-detection",
