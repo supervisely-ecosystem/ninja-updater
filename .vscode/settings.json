@@ -1,7 +1,6 @@
 {
   "python.defaultInterpreterPath": ".venv/bin/python",
-  "files.exclude": {
-  },
+  "files.exclude": {},
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
@@ -11,7 +10,10 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "debug.inlineValues": "off",
   "autoDocstring.docstringFormat": "sphinx",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
 }

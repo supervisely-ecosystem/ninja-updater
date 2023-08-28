@@ -42,21 +42,26 @@ STATS_OPTIONS = [
     "ClassCooccurrence",
     "ClassesPerImage",
     "ObjectsDistribution",
-    "ObjectSizes",
     "ClassSizes",
-    "ClassesHeatmaps",
-    "ClassesPreview",
-    "Previews",
     "ClassesTreemap",
+    "ClassesHeatmaps",
+    "ObjectSizes",
 ]
 
 VISUALS_OPTIONS = [
+    "ClassesPreview",
+    "HorizontalGrid",
     "Poster",
     "SideAnnotationsGrid",
-    "HorizontalGrid",
     "VerticalGrid",
 ]
-TEXTS_OPTIONS = ["citation", "license", "readme", "download", "summary"]
+TEXTS_OPTIONS = [
+    "summary",
+    "license",
+    "citation",
+    "download",
+    "readme",
+]
 
 REPO_STATUSES = {
     "waiting": "⏺️ Waiting",

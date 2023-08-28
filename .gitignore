@@ -3,3 +3,5 @@ files/
 .DS_Store
 __pycache__/
 repos/
+dataset_tools
+supervisely

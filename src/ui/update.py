@@ -13,6 +13,7 @@ from supervisely.app.widgets import (
     Flexbox,
     Select,
     Field,
+    Checkbox,
 )
 from git import Repo
 
@@ -24,7 +25,7 @@ stats_select = Select(
 stats_field = Field(
     content=stats_select,
     title="Force statistics",
-    description="Select 'all' to generate all statistics.",
+    # description="Select 'all' to generate all statistics.",
 )
 
 visuals_select = Select(
@@ -35,7 +36,7 @@ visuals_select = Select(
 visuals_field = Field(
     content=visuals_select,
     title="Force visuals",
-    description="Select 'all' to generate all visuals.",
+    # description="Select 'all' to generate all visuals.",
 )
 
 texts_select = Select(
@@ -44,10 +45,26 @@ texts_select = Select(
 texts_field = Field(
     content=texts_select,
     title="Force texts",
-    description="Select 'all' to generate all texts.",
+    # description="Select 'all' to generate all texts.",
 )
+download_sly_url_checkbox = Checkbox("Force download sly url")
+demo_checkbox = Checkbox("Force demo sample project")
+# demo_field = Field(
+#     content=[],
+#     title="Force demo",
+#     # description="Select 'all' to generate all texts.",
+# )
 
-select_container = Container([stats_field, visuals_field, texts_field])
+
+select_container = Container(
+    [
+        stats_field,
+        visuals_field,
+        texts_field,
+        download_sly_url_checkbox,
+        demo_checkbox,
+    ]
+)
 
 
 start_button = Button("Start", icon="zmdi zmdi-play-circle-outline")
@@ -76,6 +93,9 @@ def start():
     force_visuals = visuals_select.get_value()
     force_texts = texts_select.get_value()
 
+    if "ClassesPreview" in force_visuals:
+        force_stats.append(force_visuals.pop(force_visuals.index("ClassesPreview")))
+
     start_button.text = "Processing..."
     stop_button.show()
 
@@ -83,6 +103,8 @@ def start():
         "force_stats": force_stats or [],
         "force_visuals": force_visuals or [],
         "force_texts": force_texts or [],
+        "force_download_sly_url": download_sly_url_checkbox.is_checked(),
+        "force_demo": demo_checkbox.is_checked(),
     }
 
     repos_to_update = g.AppState.selected_repos
