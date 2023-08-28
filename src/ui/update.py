@@ -22,10 +22,11 @@ import src.globals as g
 stats_select = Select(
     [Select.Item(stat) for stat in g.STATS_OPTIONS], multiple=True, filterable=True
 )
+# reset_stats_button = Button("Reset selection", "text", plain=True, show_loading=True)
 stats_field = Field(
+    # content=Container([reset_stats_button, stats_select]),
     content=stats_select,
     title="Force statistics",
-    # description="Select 'all' to generate all statistics.",
 )
 
 visuals_select = Select(
@@ -36,7 +37,6 @@ visuals_select = Select(
 visuals_field = Field(
     content=visuals_select,
     title="Force visuals",
-    # description="Select 'all' to generate all visuals.",
 )
 
 texts_select = Select(
@@ -132,6 +132,11 @@ def stop():
     stop_button.hide()
     start_button.text = "Stopping..."
     g.AppState.continue_processing = False
+
+
+# @reset_stats_button.click
+# def reset():
+#     stats_select.set(items=[Select.Item(stat) for stat in g.STATS_OPTIONS])
 
 
 def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
