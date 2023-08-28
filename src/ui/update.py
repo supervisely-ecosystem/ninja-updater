@@ -22,10 +22,9 @@ import src.globals as g
 stats_select = Select(
     [Select.Item(stat) for stat in g.STATS_OPTIONS], multiple=True, filterable=True
 )
-# reset_stats_button = Button("Reset selection", "text", plain=True, show_loading=True)
+reset_stats_button = Button("Clean selection", "text", "small")
 stats_field = Field(
-    # content=Container([reset_stats_button, stats_select]),
-    content=stats_select,
+    content=Container([stats_select, reset_stats_button], gap=0),
     title="Force statistics",
 )
 
@@ -34,26 +33,22 @@ visuals_select = Select(
     multiple=True,
     filterable=True,
 )
+reset_visuals_button = Button("Clean selection", "text", "small")
 visuals_field = Field(
-    content=visuals_select,
+    content=Container([visuals_select, reset_visuals_button], gap=0),
     title="Force visuals",
 )
 
 texts_select = Select(
     [Select.Item(text) for text in g.TEXTS_OPTIONS], multiple=True, filterable=True
 )
+reset_texts_button = Button("Clean selection", "text", "small")
 texts_field = Field(
-    content=texts_select,
+    content=Container([texts_select, reset_texts_button], gap=0),
     title="Force texts",
-    # description="Select 'all' to generate all texts.",
 )
 download_sly_url_checkbox = Checkbox("Force download sly url")
 demo_checkbox = Checkbox("Force demo sample project")
-# demo_field = Field(
-#     content=[],
-#     title="Force demo",
-#     # description="Select 'all' to generate all texts.",
-# )
 
 
 select_container = Container(
@@ -134,9 +129,19 @@ def stop():
     g.AppState.continue_processing = False
 
 
-# @reset_stats_button.click
-# def reset():
-#     stats_select.set(items=[Select.Item(stat) for stat in g.STATS_OPTIONS])
+@reset_stats_button.click
+def reset():
+    stats_select.set_value(value=[])
+
+
+@reset_visuals_button.click
+def reset():
+    visuals_select.set_value(value=[])
+
+
+@reset_texts_button.click
+def reset():
+    texts_select.set_value(value=[])
 
 
 def process_repo(repo_url: str, idx: int, forces: Dict[str, List[str]]):
