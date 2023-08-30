@@ -103,6 +103,7 @@
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
+    "https://github.com/dataset-ninja/wider-face",
     "https://github.com/dataset-ninja/crowdhuman",
     "https://github.com/dataset-ninja/ade20k",    
     "https://github.com/dataset-ninja/cocostuff10k", 
