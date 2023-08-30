@@ -104,6 +104,7 @@
   ],
   "hidden datasets": [   
     "https://github.com/dataset-ninja/crowdhuman",
+    "https://github.com/dataset-ninja/ade20k",    
     "https://github.com/dataset-ninja/cocostuff10k", 
     "https://github.com/dataset-ninja/maize-tassel-detection",
     "https://github.com/dataset-ninja/perrenial-plants",
