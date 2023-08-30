@@ -93,7 +93,7 @@
     "https://github.com/dataset-ninja/road-pothole-images",
     "https://github.com/dataset-ninja/roundabout-aerial-images-for-vehicle-detection",
     "https://github.com/dataset-ninja/fabric-stain-dataset",
-    "https://github.com/dataset-ninja/cocostuff10k",    
+    "https://github.com/dataset-ninja/concrete-crack-segmentation-dataset",
     "https://github.com/dataset-ninja/aerial-power",
     "https://github.com/dataset-ninja/malaria-segmentation",
     "https://github.com/dataset-ninja/breast-ultasound-images",    
@@ -103,6 +103,8 @@
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
+    "https://github.com/dataset-ninja/crowdhuman",
+    "https://github.com/dataset-ninja/cocostuff10k", 
     "https://github.com/dataset-ninja/maize-tassel-detection",
     "https://github.com/dataset-ninja/perrenial-plants",
     "https://github.com/dataset-ninja/weedmaize",
@@ -117,7 +119,7 @@
     "https://github.com/dataset-ninja/kfuji",
     "https://github.com/dataset-ninja/neon-tree",
     "https://github.com/dataset-ninja/photometric-stereo-leafs",
-    "https://github.com/dataset-ninja/concrete-pores",
-    "https://github.com/dataset-ninja/concrete-crack-segmentation-dataset"
+    "https://github.com/dataset-ninja/concrete-pores"
+    
   ]
 }
