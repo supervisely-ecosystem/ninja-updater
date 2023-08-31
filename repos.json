@@ -100,11 +100,15 @@
     "https://github.com/dataset-ninja/teeth-segmentation",
     "https://github.com/dataset-ninja/quince-set",
     "https://github.com/dataset-ninja/construction-vehicle-images",    
+    "https://github.com/dataset-ninja/crowdhuman",    
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
     "https://github.com/dataset-ninja/wider-face",
-    "https://github.com/dataset-ninja/crowdhuman",
+    "https://github.com/dataset-ninja/cnam-cd",
+    "https://github.com/dataset-ninja/automatic-monitoring-pigs",
+    "https://github.com/dataset-ninja/hrscd",    
+    "https://github.com/dataset-ninja/photometric-stereo-leafs",    
     "https://github.com/dataset-ninja/ade20k",    
     "https://github.com/dataset-ninja/cocostuff10k", 
     "https://github.com/dataset-ninja/maize-tassel-detection",
@@ -120,7 +124,6 @@
     "https://github.com/dataset-ninja/open-plant-phenotyping-database",
     "https://github.com/dataset-ninja/kfuji",
     "https://github.com/dataset-ninja/neon-tree",
-    "https://github.com/dataset-ninja/photometric-stereo-leafs",
     "https://github.com/dataset-ninja/concrete-pores"
     
   ]
