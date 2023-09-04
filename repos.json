@@ -104,13 +104,15 @@
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
-    "https://github.com/dataset-ninja/wider-face",
+    "https://github.com/dataset-ninja/wider-face",    
+    "https://github.com/dataset-ninja/opencows2020",
     "https://github.com/dataset-ninja/cnam-cd",
     "https://github.com/dataset-ninja/automatic-monitoring-pigs",
     "https://github.com/dataset-ninja/hrscd",    
     "https://github.com/dataset-ninja/photometric-stereo-leafs",    
     "https://github.com/dataset-ninja/ade20k",    
     "https://github.com/dataset-ninja/cocostuff10k", 
+    "https://github.com/dataset-ninja/cocostuff164k",     
     "https://github.com/dataset-ninja/maize-tassel-detection",
     "https://github.com/dataset-ninja/perrenial-plants",
     "https://github.com/dataset-ninja/weedmaize",
