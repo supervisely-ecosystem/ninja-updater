@@ -106,6 +106,7 @@
   "hidden datasets": [   
     "https://github.com/dataset-ninja/wider-face",    
     "https://github.com/dataset-ninja/opencows2020",
+    "https://github.com/dataset-ninja/uavid",    
     "https://github.com/dataset-ninja/cnam-cd",
     "https://github.com/dataset-ninja/automatic-monitoring-pigs",
     "https://github.com/dataset-ninja/hrscd",    
