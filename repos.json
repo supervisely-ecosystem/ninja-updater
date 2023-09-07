@@ -104,6 +104,7 @@
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
+    "https://github.com/dataset-ninja/xview",
     "https://github.com/dataset-ninja/black-pod-rot",
     "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
     "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
