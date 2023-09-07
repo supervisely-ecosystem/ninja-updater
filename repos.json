@@ -104,12 +104,15 @@
     "https://github.com/dataset-ninja/small-size-construction-tools"
   ],
   "hidden datasets": [   
+    "https://github.com/dataset-ninja/black-pod-rot",
+    "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
+    "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
+    "https://github.com/dataset-ninja/komatsuna",
     "https://github.com/dataset-ninja/oil-storage-tanks",
     "https://github.com/dataset-ninja/codebrim",
     "https://github.com/dataset-ninja/ccagt",
     "https://github.com/dataset-ninja/severstal",
     "https://github.com/dataset-ninja/labeled-surgical-tools-and-images",
-    
     "https://github.com/dataset-ninja/wider-face",    
     "https://github.com/dataset-ninja/opencows2020",
     "https://github.com/dataset-ninja/uavid",    
