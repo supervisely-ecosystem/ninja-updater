@@ -60,7 +60,7 @@ TEXTS_OPTIONS = [
     "license",
     "citation",
     "download",
-    "readme",
+    # "readme",
 ]
 
 REPO_STATUSES = {
