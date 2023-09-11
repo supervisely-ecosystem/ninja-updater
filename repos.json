@@ -101,15 +101,10 @@
     "https://github.com/dataset-ninja/quince-set",
     "https://github.com/dataset-ninja/construction-vehicle-images",    
     "https://github.com/dataset-ninja/crowdhuman",    
-    "https://github.com/dataset-ninja/small-size-construction-tools"
-  ],
-  "hidden datasets": [   
+    "https://github.com/dataset-ninja/small-size-construction-tools",
+    "https://github.com/dataset-ninja/maize-whole-plant-image-dataset",
     "https://github.com/dataset-ninja/fruit-recognition",
     "https://github.com/dataset-ninja/xview",
-    "https://github.com/dataset-ninja/black-pod-rot",
-    "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
-    "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
-    "https://github.com/dataset-ninja/komatsuna",
     "https://github.com/dataset-ninja/oil-storage-tanks",
     "https://github.com/dataset-ninja/codebrim",
     "https://github.com/dataset-ninja/ccagt",
@@ -120,8 +115,14 @@
     "https://github.com/dataset-ninja/uavid",    
     "https://github.com/dataset-ninja/cnam-cd",
     "https://github.com/dataset-ninja/automatic-monitoring-pigs",
+    "https://github.com/dataset-ninja/photometric-stereo-leafs"      
+  ],
+  "hidden datasets": [   
+    "https://github.com/dataset-ninja/black-pod-rot",
+    "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
+    "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
+    "https://github.com/dataset-ninja/komatsuna",
     "https://github.com/dataset-ninja/hrscd",    
-    "https://github.com/dataset-ninja/photometric-stereo-leafs",    
     "https://github.com/dataset-ninja/ade20k",    
     "https://github.com/dataset-ninja/cocostuff10k", 
     "https://github.com/dataset-ninja/cocostuff164k",     
