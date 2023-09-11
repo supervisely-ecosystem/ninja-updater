@@ -119,6 +119,7 @@
   ],
   "hidden datasets": [   
     "https://github.com/dataset-ninja/black-pod-rot",
+    "https://github.com/dataset-ninja/aeroscapes",
     "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
     "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
     "https://github.com/dataset-ninja/komatsuna",
