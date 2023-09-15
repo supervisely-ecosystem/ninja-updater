@@ -119,7 +119,8 @@
   ],
   "hidden datasets": [
     "https://github.com/dataset-ninja/black-pod-rot",
-    "https://github.com/dataset-ninja/semantic-drone",    
+    "https://github.com/dataset-ninja/semantic-drone",
+    "https://github.com/dataset-ninja/tbx-11k",    
     "https://github.com/dataset-ninja/celebamask-hq",
     "https://github.com/dataset-ninja/pcbsegclassnet",
     "https://github.com/dataset-ninja/dental-panoramic-x-rays",
