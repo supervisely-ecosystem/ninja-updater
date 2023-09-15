@@ -120,6 +120,7 @@
   "hidden datasets": [
     "https://github.com/dataset-ninja/black-pod-rot",
     "https://github.com/dataset-ninja/semantic-drone",
+    "https://github.com/dataset-ninja/fetal-head-ultrasound",
     "https://github.com/dataset-ninja/dentalai",
     "https://github.com/dataset-ninja/tbx-11k",    
     "https://github.com/dataset-ninja/celebamask-hq",
