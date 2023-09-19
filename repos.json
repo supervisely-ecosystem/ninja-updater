@@ -120,6 +120,8 @@
   "hidden datasets": [
     "https://github.com/dataset-ninja/black-pod-rot",
     "https://github.com/dataset-ninja/semantic-drone",
+    "https://github.com/dataset-ninja/polypgen",
+    "https://github.com/dataset-ninja/tree-binary-segmentation",
     "https://github.com/dataset-ninja/substation-equipment",
     "https://github.com/dataset-ninja/cbis-ddsm",
     "https://github.com/dataset-ninja/fetal-head-ultrasound",
