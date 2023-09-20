@@ -115,13 +115,7 @@
     "https://github.com/dataset-ninja/uavid",
     "https://github.com/dataset-ninja/cnam-cd",
     "https://github.com/dataset-ninja/automatic-monitoring-pigs",
-    "https://github.com/dataset-ninja/photometric-stereo-leafs"
-  ],
-  "hidden datasets": [
-    "https://github.com/dataset-ninja/black-pod-rot",
-    "https://github.com/dataset-ninja/semantic-drone",
-    "https://github.com/dataset-ninja/recognizance22-round-2",
-    "https://github.com/dataset-ninja/plant-growth-segmentation",
+    "https://github.com/dataset-ninja/photometric-stereo-leafs",
     "https://github.com/dataset-ninja/polypgen",
     "https://github.com/dataset-ninja/tree-binary-segmentation",
     "https://github.com/dataset-ninja/substation-equipment",
@@ -133,7 +127,15 @@
     "https://github.com/dataset-ninja/pcbsegclassnet",
     "https://github.com/dataset-ninja/dental-panoramic-x-rays",
     "https://github.com/dataset-ninja/cat",
-    "https://github.com/dataset-ninja/aeroscapes",
+    "https://github.com/dataset-ninja/aeroscapes"
+  ],
+  "hidden datasets": [
+    "https://github.com/dataset-ninja/black-pod-rot",
+    "https://github.com/dataset-ninja/semantic-drone",
+    "https://github.com/dataset-ninja/multi-class-face-segmentation",
+    "https://github.com/dataset-ninja/ph2",
+    "https://github.com/dataset-ninja/recognizance22-round-2",
+    "https://github.com/dataset-ninja/plant-growth-segmentation",
     "https://github.com/dataset-ninja/corn-leaf-infection-dataset",
     "https://github.com/dataset-ninja/cattle-detection-and-counting-uav",
     "https://github.com/dataset-ninja/komatsuna",
