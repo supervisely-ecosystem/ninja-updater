@@ -8,7 +8,7 @@
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
   "port": 8000,
   "task_location": "workspace_tasks",
-  "icon": "",
+  "icon": "https://cdn.datasetninja.com/_nuxt/logo-cat.199ff017.png",
   "headless": false,
   "icon_cover": true,
   "context_menu": {
