@@ -130,6 +130,7 @@
     "https://github.com/dataset-ninja/aeroscapes"
   ],
   "hidden datasets": [
+    "https://github.com/dataset-ninja/38-cloud",
     "https://github.com/dataset-ninja/black-pod-rot",
     "https://github.com/dataset-ninja/semantic-drone",
     "https://github.com/dataset-ninja/multi-class-face-segmentation",
