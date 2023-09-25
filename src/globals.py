@@ -12,6 +12,26 @@ ABSOLUTE_PATH = os.path.dirname(__file__)
 ROOT_DIR = os.path.dirname(ABSOLUTE_PATH)
 REPOS_JSON = os.path.join(ROOT_DIR, "repos.json")
 
+FILES_DIR = os.path.join(ROOT_DIR, "files")
+os.makedirs(FILES_DIR, exist_ok=True)
+
+REPOS_DIR = os.path.join(ROOT_DIR, "repos")
+os.makedirs(REPOS_DIR, exist_ok=True)
+
+load_dotenv("local.env")
+load_dotenv(os.path.expanduser("~/ninja.env"))
+TEAM_ID = sly.io.env.team_id()
+WORKSPACE_ID = sly.io.env.workspace_id()
+api: sly.Api = sly.Api.from_env()
+sly.logger.debug(f"Team: {TEAM_ID}, Workspace: {WORKSPACE_ID}")
+
+REPOS_TEAMFILES_PATH = "/ninja-updater/_repos_list/repos.json"
+if not api.file.exists(TEAM_ID, REPOS_TEAMFILES_PATH):
+    raise FileNotFoundError(f"Could not find {REPOS_TEAMFILES_PATH} in the TeamFiles.")
+
+api.file.download(TEAM_ID, REPOS_TEAMFILES_PATH, REPOS_JSON)
+sly.logger.debug(f"Downloaded {REPOS_TEAMFILES_PATH} to {REPOS_JSON}.")
+
 REPOS_DATA = json.load(open(REPOS_JSON, "r"))
 REPOS_OWNERS = list(REPOS_DATA.keys())
 REPOS_URLS = []
@@ -21,18 +41,6 @@ REPOS_NAMES = [url.split("/")[-1].replace(".git", "") for url in REPOS_URLS]
 sly.logger.info(f"Loaded list with {len(REPOS_URLS)} repos from {REPOS_JSON}.")
 REPOS = list(zip(REPOS_NAMES, REPOS_URLS))
 
-FILES_DIR = os.path.join(ROOT_DIR, "files")
-os.makedirs(FILES_DIR, exist_ok=True)
-
-REPOS_DIR = os.path.join(ROOT_DIR, "repos")
-os.makedirs(REPOS_DIR, exist_ok=True)
-
-load_dotenv("local.env")
-load_dotenv(os.path.expanduser("~/ninja.env"))
-api: sly.Api = sly.Api.from_env()
-
-TEAM_ID = sly.io.env.team_id()
-WORKSPACE_ID = sly.io.env.workspace_id()
 
 REMOTE_SSH_KEY = sly.env.file()
 LOCAL_SSH_KEY = os.path.join(FILES_DIR, "id_rsa")
