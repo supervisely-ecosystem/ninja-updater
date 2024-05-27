@@ -1,3 +1,4 @@
 #supervisely
 git+https://github.com/supervisely/supervisely.git@dninja-export-to-supervisley
-git+https://github.com/supervisely/dataset-tools.git
+#git+https://github.com/supervisely/dataset-tools.git
+git+https://github.com/supervisely/dataset-tools.git@bot_check_tags
